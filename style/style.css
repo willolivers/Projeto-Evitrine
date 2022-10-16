@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #C300CE;
+}
+
+a{
+    text-decoration: none;
+}
+
+.conteiner1{
+    width: 100vw;
+    background-image: linear-gradient(180deg, #4D0072 0%, #9C00AE 52.6%, #C300CE 100%);
+}
+
+.logo{
+    margin: 10px 0px 0px 60px;
+}
+
+.conteiner-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    width: 30%;
+}
+
+#navegacao{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-nav{
+    text-transform: uppercase;
+    color: white;
+}
+
+.link-nav:hover{
+    color: #FE5C40;
+}
+
+.bemvindo{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div.text-bemvindo{
+    flex-direction: column;
+    text-align: center;
+}
+
+section.bemvindo > div.text-bemvindo > h1{
+    color: white;
+    font-size: 3.5em;
+    margin-bottom: 50px;
+}
+
+section.bemvindo > div.text-bemvindo > h2{
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.destaque{
+    color: #FE5C40;
+}
