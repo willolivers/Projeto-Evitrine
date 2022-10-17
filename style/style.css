@@ -19,7 +19,7 @@ a{
 }
 
 .conteiner1{
-    width: 100vw;
+    width: 100%;
     background-image: linear-gradient(180deg, #4D0072 0%, #9C00AE 52.6%, #C300CE 100%);
 }
 
@@ -53,7 +53,7 @@ nav{
 }
 
 .bemvindo{
-    width: 1000px;
+    width: 90vw;
     margin: auto;
     display: flex;
     align-items: center;
@@ -84,4 +84,45 @@ section.bemvindo > div.text-bemvindo > h2{
 
 .destaque{
     color: #FE5C40;
+}
+
+.container-sale{
+    width: 950px;
+    height: 250px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    border-radius: 20px;
+}
+
+.container-sale > li{
+    width: 25%;
+    text-align: center;
+}
+
+.container-sale > li > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    line-height: 90px;
+    color: #666666a2;
+}
+
+#container-sale1{
+    background-image: url(../imagens/laptop-and-shopping-bags-online-shopping-concept.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.imagem-box-sale{
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+}
+
+.box-sale-generic{
+    border-right: .2px solid #9191917e;
 }
