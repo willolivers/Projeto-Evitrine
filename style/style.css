@@ -87,7 +87,7 @@ section.bemvindo > div.text-bemvindo > h2{
 }
 
 .container-sale{
-    width: 950px;
+    width: 850px;
     height: 250px;
     background-color: white;
     margin: auto;
@@ -104,7 +104,6 @@ section.bemvindo > div.text-bemvindo > h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
     line-height: 90px;
     color: #666666a2;
 }
@@ -121,6 +120,30 @@ section.bemvindo > div.text-bemvindo > h2{
     width: 130px;
     height: 130px;
     border-radius: 20px;
+}
+
+.image-camisa{
+    position: relative;
+    top: 8%;
+}
+
+.box-btn-ver{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    width: 60%;
+    padding: 8px;
+    background: rgba(195, 0, 206, 0.7);
+    border-radius: 17px;
+    opacity: 0;
+    animation-delay: 3s;
+}
+
+.box-btn-ver:hover{
+    opacity: 1;
+    transition: .3s;
 }
 
 .box-sale-generic{
