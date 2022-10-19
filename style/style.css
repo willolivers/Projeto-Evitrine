@@ -32,18 +32,12 @@ a{
     justify-content: space-between;
 }
 
-nav{
-    width: 30%;
-}
-
 #navegacao{
-    list-style: none;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .link-nav{
-    padding: 20px;
+    padding: 15px;
     text-transform: uppercase;
     color: white;
 }
@@ -95,16 +89,15 @@ section.bemvindo > div.text-bemvindo > h2{
     border-radius: 20px;
 }
 
+
 .container-sale > li{
-    width: 25%;
+    width: 250px;
     text-align: center;
 }
 
 .container-sale > li > a{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    line-height: 90px;
+    line-height: 140px;
     color: #666666a2;
 }
 
@@ -115,6 +108,7 @@ section.bemvindo > div.text-bemvindo > h2{
     background-position: center;
     border-radius: 20px 0px 0px 20px;
 }
+
 
 .imagem-box-sale{
     width: 130px;
@@ -127,12 +121,22 @@ section.bemvindo > div.text-bemvindo > h2{
     top: 8%;
 }
 
-.box-btn-ver{
+#btn-oferta{
     position: relative;
+    top: 45%;
+    right: 17%;
+    background-color: #B100BF;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.box-btn-ver{
+    position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: aliceblue;
+    right: 50%;
+    transform: translate(50%, 80%);
+    color: white;
     width: 60%;
     padding: 8px;
     background: rgba(195, 0, 206, 0.7);
@@ -140,6 +144,7 @@ section.bemvindo > div.text-bemvindo > h2{
     opacity: 0;
     animation-delay: 3s;
 }
+
 
 .box-btn-ver:hover{
     opacity: 1;
@@ -149,3 +154,5 @@ section.bemvindo > div.text-bemvindo > h2{
 .box-sale-generic{
     border-right: .2px solid #9191917e;
 }
+
+
