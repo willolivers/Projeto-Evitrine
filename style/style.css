@@ -1,6 +1,14 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 
+:root{
+    --color01:#C300CE;
+    --color02:#B100BF;
+    --color03:#FE5C40;
+    --color04:#8C17C3;
+    --bg-color-02: #322F33;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,7 +19,7 @@
 }
 
 body{
-    background-color: #C300CE;
+    background-color: var(--color01);
 }
 
 a{
@@ -25,7 +33,7 @@ a{
 
 
 .conteiner-nav{
-    width: 90vw;
+    width: 80vw;
     margin: auto;
     display: flex;
     align-items: center;
@@ -43,7 +51,7 @@ a{
 }
 
 .link-nav:hover{
-    color: #FE5C40;
+    color: var(--color03);
 }
 
 .bemvindo{
@@ -52,7 +60,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 div.text-bemvindo{
@@ -77,7 +84,7 @@ section.bemvindo > div.text-bemvindo > h2{
 }
 
 .destaque{
-    color: #FE5C40;
+    color: var(--color03);
 }
 
 .container-sale{
@@ -86,7 +93,7 @@ section.bemvindo > div.text-bemvindo > h2{
     background-color: white;
     margin: auto;
     display: flex;
-    border-radius: 20px;
+    border-radius: 21px;
 }
 
 
@@ -103,12 +110,15 @@ section.bemvindo > div.text-bemvindo > h2{
 
 #container-sale1{
     background-image: url(../imagens/laptop-and-shopping-bags-online-shopping-concept.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     border-radius: 20px 0px 0px 20px;
 }
 
+.box-sale-generic{
+    border-right: .2px solid #9191917e;
+}
 
 .imagem-box-sale{
     width: 130px;
@@ -125,7 +135,7 @@ section.bemvindo > div.text-bemvindo > h2{
     position: relative;
     top: 45%;
     right: 17%;
-    background-color: #B100BF;
+    background-color: var(--color02);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
     border-radius: 0px 10px 10px 0px;
@@ -151,8 +161,161 @@ section.bemvindo > div.text-bemvindo > h2{
     transition: .3s;
 }
 
-.box-sale-generic{
-    border-right: .2px solid #9191917e;
+
+
+/****************************************************************
+******* INICIO DA CONFIGURAÇÃO DO CONTAINER DAS LOJAS **********/
+
+#container-lojas{
+    height: 350px;
+    background-color: var(--bg-color-02);
+    margin: 50px 0px 50px 0px;
+    display: flex;
+}
+
+.container-loja{
+    width: 850px;
+    height: 280px;
+    background-color: var(--bg-color-02);
+    margin: auto;
+    display: flex;
+    border-radius: 21px;
+    gap: 5px;
+}
+
+.container-loja > li{
+    width: 250px;
+    text-align: center;
+    border: 2px solid #fffcfc59;
+    gap: 5px;
+}
+
+.container-loja > li > a{
+    align-items: center;
+    line-height: 140px;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 1.1em;
+}
+
+#container-loja02{
+    background-image: url(../assets/loja.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#container-loja5{
+    border-radius: 0px 21px 21px 0px;
+}
+
+.imagem-box-lojas{
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+}
+
+.image-loja{
+    position: relative;
+    top: 8%;
+}
+
+#btn-lojas{
+    position: relative;
+    top: 50%;
+    right: 18.5%;
+    background-color: var(--color03);
+    color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#btn-lojas:hover{
+    background-color: #fd6a51;
 }
 
 
+
+/******************************************************************
+********* INICIO DAS CONFIGURAÇÕES DE MEDIA QUERYS*******************/
+
+
+@media (max-width: 760px){
+
+    .img-header{
+        width: 300px;
+    }
+
+    .bemvindo{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: .8em;
+    }
+
+    .box-sale-generic, .box-btn-ver, .image-camisa, .imagem-box-sale, #container-sale5
+    {
+        display: none;
+    }
+    .container-sale{
+        background-color: var(--color01);
+        width: 300px;
+        height: 400px;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+    #container-sale1{
+        width: 300px;
+        border-radius: 10px;
+        border: 4px solid var(--color02);
+        box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.466);
+    }
+    #btn-oferta{
+        position: relative;
+        top: 58%;
+        right: 31.5%;
+        background-color: var(--color02);
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
+
+
+
+
+@media (max-width: 760px){
+    .box-loja-generic, .box-btn-ver, .image-loja, .imagem-box-loja, #container-loja5
+    {
+        display: none;
+    }
+
+    #container-lojas{
+        height: 500px;
+    }
+    .container-loja{
+        background-color: var(--color03);
+        width: 300px;
+        height: 400px;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    #container-loja02{
+        width: 300px;
+        border-radius: 10px;
+        border: 4px solid var(--color03);
+        box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.466);
+    }
+    
+    #btn-lojas{
+        position: relative;
+        top: 58%;
+        right: 33%;
+        background-color: var(--color03);
+        color: rgb(255, 255, 255);
+        padding: 10px 25px;
+        border-radius: 0px 10px 10px 0px;
+    }
+}
