@@ -19,6 +19,7 @@
 }
 
 body{
+    width: 100vw;
     background-color: var(--color01);
 }
 
@@ -27,7 +28,7 @@ a{
 }
 
 .conteiner1{
-    width: 100%;
+    width: 100vw;
     background-image: linear-gradient(180deg, #4D0072 0%, #9C00AE 52.6%, #C300CE 100%);
 }
 
@@ -42,10 +43,10 @@ a{
 
 #navegacao{
     display: flex;
+    gap: 15px;
 }
 
 .link-nav{
-    padding: 15px;
     text-transform: uppercase;
     color: white;
 }
@@ -88,7 +89,7 @@ section.bemvindo > div.text-bemvindo > h2{
 }
 
 .container-sale{
-    width: 850px;
+    width: 750px;
     height: 250px;
     background-color: white;
     margin: auto;
@@ -134,11 +135,15 @@ section.bemvindo > div.text-bemvindo > h2{
 #btn-oferta{
     position: relative;
     top: 45%;
-    right: 17%;
-    background-color: var(--color02);
+    right: 12.5%;
+    background-color: var(--color01);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
     border-radius: 0px 10px 10px 0px;
+}
+
+#btn-oferta:hover{
+    background-color: #bc2dcc;
 }
 
 .box-btn-ver{
@@ -174,7 +179,7 @@ section.bemvindo > div.text-bemvindo > h2{
 }
 
 .container-loja{
-    width: 850px;
+    width: 750px;
     height: 280px;
     background-color: var(--bg-color-02);
     margin: auto;
@@ -224,7 +229,7 @@ section.bemvindo > div.text-bemvindo > h2{
 #btn-lojas{
     position: relative;
     top: 50%;
-    right: 18.5%;
+    right: 14.5%;
     background-color: var(--color03);
     color: rgb(255, 255, 255);
     padding: 10px 25px;
@@ -318,4 +323,22 @@ section.bemvindo > div.text-bemvindo > h2{
         padding: 10px 25px;
         border-radius: 0px 10px 10px 0px;
     }
+}
+
+
+@media (max-width: 420px){
+    #link-ofertas, #link-lojas{
+        display: none;
+    }
+
+    #link-incricao{
+        background-color: #fd6a51;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .img-header{
+        width: 250px;
+    }
+
 }
