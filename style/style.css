@@ -6,6 +6,7 @@
     --color02:#B100BF;
     --color03:#FE5C40;
     --color04:#8C17C3;
+    --color05:#4D0072;
     --bg-color-02: #322F33;
 }
 
@@ -137,7 +138,7 @@ section.bemvindo > div.text-bemvindo > h2{
     top: 45%;
     right: 13.5%;
     background-color: var(--color01);
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); 
     padding: 10px 20px;
     border-radius: 0px 10px 10px 0px;
 }
@@ -174,7 +175,7 @@ section.bemvindo > div.text-bemvindo > h2{
 #container-lojas{
     height: 350px;
     background-color: var(--bg-color-02);
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 0px 0px;
     display: flex;
 }
 
@@ -240,6 +241,58 @@ section.bemvindo > div.text-bemvindo > h2{
     background-color: #fd6a51;
 }
 
+.box-btn-ver-lojas{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 80%);
+    color: white;
+    width: 60%;
+    padding: 8px;
+    background: rgba(254, 92, 64, 0.7);
+    border-radius: 17px;
+    opacity: 0;
+    animation-delay: 3s;
+}
+
+
+.box-btn-ver-lojas:hover{
+    opacity: 1;
+    transition: .3s;
+}
+
+
+
+
+/***************************************************************************************
+*********************** CONFIGURAÇÃO DO MAPA********************************/
+
+.container-maps{
+    background-color: var(--color04);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map{
+    border-radius: 20px;
+    position: relative;
+}
+
+#txt-vertical{
+    position: absolute;
+    right: 92px;
+    width: 350px;
+    transform: rotate(90deg);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    font-size: 1.2em;
+}
+
+
 
 
 /******************************************************************
@@ -285,9 +338,6 @@ section.bemvindo > div.text-bemvindo > h2{
         border-radius: 0px 10px 10px 0px;
     }
 }
-
-
-
 
 
 @media (max-width: 760px){
