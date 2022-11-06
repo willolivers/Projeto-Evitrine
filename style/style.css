@@ -135,7 +135,7 @@ section.bemvindo > div.text-bemvindo > h2{
 #btn-oferta{
     position: relative;
     top: 45%;
-    right: 12.5%;
+    right: 13.5%;
     background-color: var(--color01);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
