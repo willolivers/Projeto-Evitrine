@@ -22,6 +22,7 @@
 body{
     width: 100vw;
     background-color: var(--color01);
+    background-image: linear-gradient(180deg, #4D0072 0%, #9C00AE 52.6%, #C300CE 100%);
 }
 
 a{
@@ -29,13 +30,14 @@ a{
 }
 
 .conteiner1{
-    width: 100vw;
-    background-image: linear-gradient(180deg, #4D0072 0%, #9C00AE 52.6%, #C300CE 100%);
+    width: 90vw;
+    margin: auto;
+    
 }
 
 
 .conteiner-nav{
-    width: 80vw;
+    max-width: 1100px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -57,7 +59,7 @@ a{
 }
 
 .bemvindo{
-    width: 90vw;
+    max-width:1100px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -275,22 +277,9 @@ section.bemvindo > div.text-bemvindo > h2{
     align-items: center;
 }
 
-.map{
-    border-radius: 20px;
-    position: relative;
-}
 
-#txt-vertical{
-    position: absolute;
-    right: 92px;
-    width: 350px;
-    transform: rotate(90deg);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: white;
-    font-size: 1.2em;
-}
+
+
 
 
 
